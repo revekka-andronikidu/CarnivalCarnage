@@ -1,0 +1,84 @@
+{
+	"FileVersion": 1,
+	"Version": 1,
+	"VersionName": "0.01",
+	"FriendlyName": "AbonneerFrameworkPlugin",
+	"Description": "The general framework used in Abonneer games.",
+	"Category": "Framework",
+	"CreatedBy": "Abonneer",
+	"CreatedByURL": "http://abonneer-games.com",
+	"CanContainContent": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "Framework",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"AIModule",
+				"CoreUObject",
+				"UMG",
+				"EnhancedInput"
+			],
+			"PlatformAllowList": [
+				"Win64",
+				"Android",
+				"Linux",
+				"Mac",
+				"IOS"
+			]
+		},
+		{
+			"Name": "Utils",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Core",
+				"Engine"
+			]
+		},
+		{
+			"Name": "Online",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Core"
+			]
+		},
+		{
+			"Name": "SmoothSyncPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Core"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		},
+		{
+			"Name": "SteamShared",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		}
+	]
+}
